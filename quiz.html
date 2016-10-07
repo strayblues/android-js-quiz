@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS Quiz</title>
+    <link rel="stylesheet" type="text/css" href="Quiz.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js">
+	</script>
+	<script src="Quiz.js">
+	</script>
+</head>
+<body>
+
+<div id="instructions">
+<p>
+	The instructions for this mini project can be found 
+	<a href="https://docs.google.com/document/d/10aB0hNLyvboM5k7Zjv2ioK3BMYx5ix
+			_1JPYVyXKZD8g/edit" target="_blank">here</a>.
+	The rest of the projects are 
+	<a href="https://drive.google.com/drive/u/0/folders/
+			0BxDgrQD6qivLVjZOcDJQSEt2SkU" target="_blank">here</a>.
+</p>
+</div>
+
+<div id="wrapper"><br>
+	
+	<div id="prev"><input type="button" id="bt_prev" value="< Back" /></div>
+	
+	<div id="questions">
+	<p id="question">1. What is the answer to this question?</p>
+	<ul class="answers">
+		<input type="radio" name="q1" value="a" id="answer1button"><label id="answer1" for="answer1button">Answer 1</label><br/>
+		<input type="radio" name="q1" value="b" id="answer2button"><label id="answer2" for="answer2button">Answer 2</label><br/>
+		<input type="radio" name="q1" value="c" id="answer3button"><label id="answer3" for="answer3button">Answer 3</label><br/>
+		<input type="radio" name="q1" value="d" id="answer4button"><label id="answer4" for="answer4button">Answer 4</label><br/>
+	</ul>
+	</div>
+	
+	<div id="next"><input type="button" id="bt_next" value="Next >" />
+	</div>
+
+</div>
+
+	<input type="button" id="bt_score" value="Show score" onClick="calcScore()" />
+	<div id=score></div>
+
+</body>
+</html>

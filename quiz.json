@@ -1,0 +1,129 @@
+[
+
+  {"question": "Why do JavaScript and Java have similar name?",
+    "correct answer": "JavaScript's syntax is loosely based on Java's",
+    "wrong answers": ["JavaScript is a stripped-down version of Java","They both originated on the island of Java","None of the above"]},
+
+  {"question": "When a user views a page containing a JavaScript program, which machine actually executes the script?",
+    "correct answer": "The User's machine running a Web browser",
+    "wrong answers": ["The Web server","A central machine deep within Netscape's corporate offices","None of the above"]},
+
+  {"question": "______ JavaScript is also called client-side JavaScript.",
+    "correct answer": "Navigator",
+    "wrong answers": ["Microsoft","LiveWire","Native"]},
+
+  {"question": "__________ JavaScript is also called server-side JavaScript.",
+    "correct answer": "LiveWire",
+    "wrong answers": ["Microsoft","Navigator","Native"]},
+
+  {"question": "What are variables used for in JavaScript Programs?",
+    "correct answer": "Storing numbers, dates, or other values",
+    "wrong answers": ["Varying randomly","Causing high-school algebra flashbacks","None of the above"]},
+
+  {"question": "_____ JavaScript statements embedded in an HTML page can respond to user events such as mouse-clicks, form input, and page navigation.",
+    "correct answer": "Client-side",
+    "wrong answers": ["Server-side","Local","Native"]},
+
+  {"question": "What should appear at the very end of your JavaScript?",
+    "correct answer": "The </script>",
+    "wrong answers": ["The <script>","The END statement","None of the above"]},
+
+  {"question": "Which of the following can't be done with client-side JavaScript?",
+    "correct answer": "Storing the form's contents to a database file on the server",
+    "wrong answers": ["Validating a form","Sending a form's contents by email","None of the above"]},
+
+  {"question": "Which of the following are capabilities of functions in JavaScript?",
+    "correct answer": "Accept parameters",
+    "wrong answers": ["Return a value","Accept parameters and Return a value","None of the above"]},
+
+  {"question": "Which of the following is not a valid JavaScript variable name?",
+    "correct answer": "2names",
+    "wrong answers": [" _first_and_last_names","FirstAndLast","None of the above"]},
+
+  {"question": "______ tag is an extension to HTML that can enclose any number of JavaScript statements.",
+    "correct answer": "<SCRIPT>",
+    "wrong answers": ["<BODY>","<HEAD>","<TITLE>"]},
+
+  {"question": "How does JavaScript store dates in a date object?",
+    "correct answer": "The number of milliseconds since January 1st, 1970",
+    "wrong answers": ["The number of days since January 1st, 1900","The number of seconds since Netscape's public stock offering.","None of the above"]},
+
+  {"question": "Which of the following attribute can hold the JavaScript version?",
+    "correct answer": "LANGUAGE",
+    "wrong answers": ["SCRIPT","VERSION","None of the above"]},
+
+  {"question": "What is the correct JavaScript syntax to write \"Hello World\"?",
+    "correct answer": "document.write(\"Hello World\")",
+    "wrong answers": ["System.out.println(\"Hello World\")",
+                      "println (\"Hello World\")",
+                      "response.write(\"Hello World\")"]},
+
+  {"question": "Which of the following way can be used to indicate the LANGUAGE attribute?",
+    "correct answer": "<SCRIPT LANGUAGE=\"JavaScriptVersion\">    JavaScript statements…</SCRIPT>",
+    "wrong answers": ["<LANGUAGE=\"JavaScriptVersion\">","<SCRIPT LANGUAGE=\"JavaScriptVersion\">","<SCRIPT LANGUAGE=\"JavaScriptVersion\"!>    JavaScript statements…</SCRIPT>"]},
+
+  {"question": "What is the correct syntax for referring to an external script called \" abc.js\"?",
+    "correct answer": "<script src=\" abc.js\">",
+    "wrong answers": ["<script href=\" abc.js\">","<script name=\" abc.js\">","None of the above"]},
+
+  {"question": "Which types of image maps can be used with JavaScript?",
+    "correct answer": "Client-side image maps",
+    "wrong answers": ["Server-side image maps","Server-side image maps and Client-side image maps","None of the above"]},
+
+  {"question": "Which of the following navigator object properties is the same in both   Netscape and IE?",
+    "correct answer": "navigator.appCodeName",
+    "wrong answers": ["navigator.appName","navigator.appVersion","None of the above"]},
+
+  {"question": "What does the <noscript> tag do?",
+    "correct answer": "Enclose text to be displayed by non-JavaScript browsers.",
+    "wrong answers": ["Prevents scripts on the page from executing.","Describes certain low-budget movies.","None of the above"]},
+
+  {"question": "JavaScript entities start with _______ and end with _________.",
+    "correct answer": "Ampersand, semicolon",
+    "wrong answers": ["Semicolon, colon","Semicolon, Ampersand","Ampersand, colon"]},
+
+  {"question": "Which of the following best describes JavaScript?",
+    "correct answer": "blue",
+    "wrong answers": ["cute","door","cup"]},
+
+  {"question": "what is your favorite colour?",
+    "correct answer": "an object-oriented scripting language.",
+    "wrong answers": ["a low-level programming language.","a scripting language precompiled in the browser.","a compiled scripting language."]},
+
+  {"question": "Choose the server-side JavaScript object?",
+    "correct answer": "File",
+    "wrong answers": ["FileUpLoad","Function","Date"]},
+
+  {"question": "Choose the client-side JavaScript object?",
+    "correct answer": "FileUpLoad",
+    "wrong answers": ["Database","Cursor","Client"]},
+
+  {"question": "Which of the following is not considered a JavaScript operator?",
+    "correct answer": "this",
+    "wrong answers": ["new","delete","typeof"]},
+
+  {"question": "______method evaluates a string of JavaScript code in the context of the specified object.",
+    "correct answer": "Eval",
+    "wrong answers": ["ParseInt","ParseFloat","Efloat"]},
+
+  {"question": "Which of the following event fires when the form element loses the focus: <button>, <input>, <label>, <select>, <textarea>?",
+    "correct answer": "onblur",
+    "wrong answers": ["onfocus","onclick","ondblclick"]},
+
+  {"question": "JavaScript is interpreted by _________",
+    "correct answer": "Client",
+    "wrong answers": ["Server","Object","None of the above"]},
+
+  {"question": "Using _______ statement is how you test for a specific condition.",
+    "correct answer": "If",
+    "wrong answers": ["Select","Switch","For"]},
+
+  {"question": "The _______ method of an Array object adds and/or removes elements from an array.",
+    "correct answer": "Splice",
+    "wrong answers": ["Reverse","Shift","Slice"]},
+
+  {"question": "To set up the window to capture all Click events, we use which of the following statement?",
+    "correct answer": "window.captureEvents(Event.CLICK);",
+    "wrong answers": ["window.handleEvents (Event.CLICK);","window.routeEvents(Event.CLICK );","window.raiseEvents(Event.CLICK );"]}
+
+  ]
