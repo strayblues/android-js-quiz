@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript knowledge quiz</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js">
+	</script>
+  <!--jquery-mobile links-->
+  <link rel="stylesheet" href=
+          "//code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+  <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+  <script src="//code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js">
+  </script>
+  <!--jquery-ui links-->
+  <link rel="stylesheet" href="jquery-ui.min.css">
+  <script src="external/jquery/jquery.js"></script>
+  <script src="jquery-ui.min.js"></script>
+  <!--my links-->
+  <script src="quiz.js"></script>
+  <link rel="stylesheet" type="text/css" href="my-style.css">
+</head>
+<body>
+
+<div id="wrapper"><br>
+
+	<div id="prev"><input type="button" id="bt_prev" data-role="arrow-l" /></div>
+
+	<div id="questions">
+	<p id="question">What is the answer to this question?</p>
+	<ul class="answers">
+		<input type="radio" name="question" value="a" id="answer1button"><label id="answer1" for="answer1button">Answer 1</label><br/>
+		<input type="radio" name="question" value="b" id="answer2button"><label id="answer2" for="answer2button">Answer 2</label><br/>
+		<input type="radio" name="question" value="c" id="answer3button"><label id="answer3" for="answer3button">Answer 3</label><br/>
+		<input type="radio" name="question" value="d" id="answer4button"><label id="answer4" for="answer4button">Answer 4</label><br/>
+	</ul>
+	</div>
+
+	<div id="next"><input type="button" id="bt_next" data-role="arrow-r" />
+	</div>
+
+</div>
+
+	<input type="button" id="bt_score" value="Show score" onClick="calcScore()" />
+	<div id=score></div>
+
+</body>
+</html>

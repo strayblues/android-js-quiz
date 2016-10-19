@@ -46,7 +46,7 @@ var fullQuestionList, questionList;
 $.getJSON("Quiz.JSON", function (content){
     questionList = shuffle(content).slice(0, 10);
     for (var i=0; i<10; i++) {
-        correctAnswers.push(questionList[i]['correct answer']);        
+        correctAnswers.push(questionList[i]['correct answer']);
     }
 });
 
@@ -57,14 +57,14 @@ function showQuestion(){
     $("#answer3button").prop("checked", false);
     $("#answer4button").prop("checked", false);
 
-    var q1 = questionList[clickCount];
-    $('#question').text(q1['question']);
+    var q = questionList[clickCount];
+    $('#question').text(q['question']);
 
     var answerz = [
-        q1['correct answer'],
-        q1['wrong answers'][0],
-        q1['wrong answers'][1],
-        q1['wrong answers'][2]
+        q['correct answer'],
+        q['wrong answers'][0],
+        q['wrong answers'][1],
+        q['wrong answers'][2]
     ];
 
         shuffle(answerz);
@@ -73,13 +73,17 @@ function showQuestion(){
         $('#answer2').text(answerz[1]);
         $('#answer3').text(answerz[2]);
         $('#answer4').text(answerz[3]);
+
+        $(document).click(function() {
+        $("#questions").effect( "slide", "slow" );
+});
 }
 
 var clickCount = 0;
 showQuestion();
 $("#bt_next").show();
-$("#bt_prev").hide();
-$("#bt_score").hide();
+$("#bt_prev #bt_score").hide();
+//$("#bt_score").hide();
 
 $("#bt_next").click(function(){
     clickCount+=1;
@@ -87,7 +91,7 @@ $("#bt_next").click(function(){
     $("#bt_prev").show();
     $("#bt_next").show();
     $("#bt_score").hide();
-    
+
     if (clickCount === 9) {
     $("#bt_score").show();
     $("#bt_next").hide();
@@ -101,9 +105,9 @@ $("#bt_prev").click(function(){
     $("#bt_prev").show();
     $("#bt_next").show();
     $("#bt_score").hide();
-    
+
     if (clickCount === 0) {
-    
+
     $("#bt_prev").hide();
     }
 }
