@@ -11,31 +11,24 @@
   <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
   <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js">
   </script>
-  <!--jquery-ui links
-  <link rel="stylesheet" href="jquery-ui.min.css">
-  <script src="external/jquery/jquery.js"></script>
-  <script src="jquery-ui.min.js"></script>
-  -->
   <!--my links-->
   <script src="quiz.js"></script>
-<!--  <link rel="stylesheet" type="text/css" href="my-style.css"> -->
 </head>
 <body>
 
-<div id="wrapper"><br>
-  <div data-role="header">
+  <div data-role="header" data-theme="b">
     <button id="bt_prev" data-role="arrow-l"
+            data-icon="arrow-l"
             class="ui-btn-left ui-btn-b ui-btn-inline ui-mini ui-corner-all
-                  ui-btn-icon-left ui-icon-delete">Back
+                  ui-btn-icon-left ui-icon-arrow-r">BACK
     </button>
 <h1>JavaScript Knowledge Quiz</h1>
-    <button id="bt_next"
-            data-role="arrow-r"
+    <button id="bt_next" data-role="arrow-r" data-icon="arrow-r"
             class="ui-btn-right ui-btn-b ui-btn-inline ui-mini ui-corner-all
-                  ui-btn-icon-right ui-icon-delete">Next
+                  ui-btn-icon-right">NEXT
     </button>
-
-	<div id="questions">
+  </div>
+	<div data-role="content" id="questions">
 	<p id="question">What is the answer to this question?</p>
 	<ul class="answers">
 		<input type="radio" name="question" value="a" id="answer1button"><label id="answer1" for="answer1button">Answer 1</label><br/>
@@ -45,10 +38,12 @@
 	</ul>
 	</div>
 
-</div>
-
 	<input type="button" id="bt_score" value="Show score" onClick="calcScore()" />
-	<div id=score></div>
+	<div id=score"></div>
+
+    <div data-role="footer" data-theme="b">
+      <h4></h4>
+    </div>
 
 </body>
 </html>
