@@ -7,23 +7,33 @@
 	</script>
   <!--jquery-mobile links-->
   <link rel="stylesheet" href=
-          "//code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
-  <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
-  <script src="//code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js">
+          "https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+  <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+  <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js">
   </script>
-  <!--jquery-ui links-->
+  <!--jquery-ui links
   <link rel="stylesheet" href="jquery-ui.min.css">
   <script src="external/jquery/jquery.js"></script>
   <script src="jquery-ui.min.js"></script>
+  -->
   <!--my links-->
   <script src="quiz.js"></script>
-  <link rel="stylesheet" type="text/css" href="my-style.css">
+<!--  <link rel="stylesheet" type="text/css" href="my-style.css"> -->
 </head>
 <body>
 
 <div id="wrapper"><br>
-
-	<div id="prev"><input type="button" id="bt_prev" data-role="arrow-l" /></div>
+  <div data-role="header">
+    <button id="bt_prev" data-role="arrow-l"
+            class="ui-btn-left ui-btn-b ui-btn-inline ui-mini ui-corner-all
+                  ui-btn-icon-left ui-icon-delete">Back
+    </button>
+<h1>JavaScript Knowledge Quiz</h1>
+    <button id="bt_next"
+            data-role="arrow-r"
+            class="ui-btn-right ui-btn-b ui-btn-inline ui-mini ui-corner-all
+                  ui-btn-icon-right ui-icon-delete">Next
+    </button>
 
 	<div id="questions">
 	<p id="question">What is the answer to this question?</p>
@@ -33,9 +43,6 @@
 		<input type="radio" name="question" value="c" id="answer3button"><label id="answer3" for="answer3button">Answer 3</label><br/>
 		<input type="radio" name="question" value="d" id="answer4button"><label id="answer4" for="answer4button">Answer 4</label><br/>
 	</ul>
-	</div>
-
-	<div id="next"><input type="button" id="bt_next" data-role="arrow-r" />
 	</div>
 
 </div>

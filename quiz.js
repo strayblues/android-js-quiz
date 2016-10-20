@@ -43,7 +43,7 @@ function shuffle(array) {
 
 var fullQuestionList, questionList;
 
-$.getJSON("Quiz.JSON", function (content){
+$.getJSON("quiz.json", function (content){
     questionList = shuffle(content).slice(0, 10);
     for (var i=0; i<10; i++) {
         correctAnswers.push(questionList[i]['correct answer']);
@@ -75,15 +75,15 @@ function showQuestion(){
         $('#answer4').text(answerz[3]);
 
         $(document).click(function() {
-        $("#questions").effect( "slide", "slow" );
+        $("#questions").effect( "slide", "slow");
 });
 }
 
 var clickCount = 0;
 showQuestion();
 $("#bt_next").show();
-$("#bt_prev #bt_score").hide();
-//$("#bt_score").hide();
+$("#bt_prev").hide();
+$("#bt_score").hide();
 
 $("#bt_next").click(function(){
     clickCount+=1;
