@@ -14,21 +14,16 @@
   <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
   <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js">
   </script>
-
-  <!--my links-->
+  <!--other links-->
   <script src="quiz.js"></script>
+  <link rel="stylesheet" href="my-css/style.css" />
 </head>
 <body>
   <div data-role="page" id="home" data-theme="a">
-
-    <div data-role="header">
-      <button id="bt_prev" data-role="arrow-l" data-icon="arrow-l">BACK
-      </button>
-
-      <h1>JavaScript Knowledge Quiz</h1>
-
-      <button id="bt_next" data-role="arrow-r" data-icon="arrow-r">NEXT
-      </button>
+    <div data-role="header" id="wrapper">
+      <button id="bt_prev" data-role="arrow-l" data-icon="arrow-l">BACK</button>
+      <h1 id="app-heading">JS QUIZ</h1>
+      <button id="bt_next" data-role="arrow-r" data-icon="arrow-r" class="ui-btn-icon-right">NEXT</button>
     </div>
 
     <div data-role="content" id="questions">
@@ -43,8 +38,6 @@
 
   	<input type="button" id="bt_score" value="Show score" onClick="calcScore()" />
   	<div id="score"></div>
-
-    <div data-role="footer"><h4></h4></div>
 
   </div>
 </body>

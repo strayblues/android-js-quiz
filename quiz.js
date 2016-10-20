@@ -73,10 +73,6 @@ function showQuestion(){
         $('#answer2').text(answerz[1]);
         $('#answer3').text(answerz[2]);
         $('#answer4').text(answerz[3]);
-
-        $(document).click(function() {
-        $("#questions").effect( "slide", "slow");
-});
 }
 
 var clickCount = 0;

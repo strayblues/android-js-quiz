@@ -2,7 +2,7 @@
 body {
     padding: 2em;
     margin:0px;
-    letter-spacing: 3px;    
+    letter-spacing: 3px;
 }
 
 body, #bt_start, #bt_score {
@@ -28,7 +28,7 @@ body, #bt_start, #bt_score {
 #wrapper {
     width: 100%;
     clear: both;
-    
+
 }
 
 #questions {
@@ -40,7 +40,7 @@ body, #bt_start, #bt_score {
 
 #prev, #next {
     width: 10%;
-    float: left;    
+    float: left;
 }
 
 #instructions {

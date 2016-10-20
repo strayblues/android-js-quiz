@@ -1,0 +1,17 @@
+.wrapper {
+    width: 100%;
+    clear: both;
+
+}
+
+.questions {
+    width: 70%;
+    float: left;
+    text-align: left;
+    padding-left: 10%;
+}
+
+#bt_prev, #bt_next {
+    width: 15%;
+    float: left;
+}
