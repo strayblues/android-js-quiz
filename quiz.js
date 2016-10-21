@@ -17,7 +17,8 @@ function calcScore(){
         score++;
         }
     }
-    $("#score").text("Your score is: "+score);
+    $("#bt_score").hide();
+    $("#score").text("YOUR SCORE: "+score);
 }
 
 $(function(){
@@ -37,7 +38,6 @@ function shuffle(array) {
         array[currentIndex] = array[randomIndex];
         array[randomIndex] = temporaryValue;
     }
-
     return array;
 }
 

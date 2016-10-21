@@ -1,0 +1,39 @@
+
+#question {
+font-family: 'Montserrat', sans-serif;
+font-size: 18pt;
+color: black;
+}
+
+h1 {
+  font-size: 115% !important;
+}
+
+#wrapper {
+clear: both;
+}
+
+#bt_next, #bt_prev {
+ font-size: 100%;
+ height: 90%;
+ width: 20%;
+}
+
+#bt_score {
+  width: 25%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+#score, .score {
+  text-align: center;
+}
+
+#score {
+  color: green;
+  font-size: 16pt;
+}
+
+#app-heading {
+  font-size: 200%;
+}

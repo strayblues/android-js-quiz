@@ -8,18 +8,21 @@
 	</script>
   <!--jquery-mobile links + my custom theme-->
   <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" />
-  <link rel="stylesheet" href="my-css/themes/jquery.mobile.icons.min.css" />
-  <link rel="stylesheet" href="my-css/themes/yellowblue.min.css" />
-  <link rel="stylesheet" href="my-css/themes/jquery.mobile.icons.min.css" />
+  <link rel="stylesheet" href="css/themes/jquery.mobile.icons.min.css" />
+  <link rel="stylesheet" href="css/themes/theme5.min.css" />
+  <link rel="stylesheet" href="css/themes/jquery.mobile.icons.min.css" />
   <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
   <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js">
   </script>
-  <!--other links-->
+
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
+  <!--internal links-->
   <script src="quiz.js"></script>
-  <link rel="stylesheet" href="my-css/style.css" />
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-  <div data-role="page" id="home" data-theme="a">
+  <div data-role="page" id="home" data-theme="b">
     <div data-role="header" id="wrapper">
       <button id="bt_prev" data-icon="carat-l">BACK</button>
       <h1 id="app-heading">JS QUIZ</h1>
@@ -35,8 +38,9 @@
   		<input type="radio" name="question" value="d" id="answer4button"><label id="answer4" for="answer4button">Answer 4</label><br/>
   	</ul>
   	</div>
-
-  	<input type="button" id="bt_score" value="Show score" onClick="calcScore()" />
+    <div class="score">
+  	<button id="bt_score" onClick="calcScore()">SHOW SCORE</button>
+    </div>
   	<div id="score"></div>
 
   </div>
