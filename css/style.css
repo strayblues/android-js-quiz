@@ -22,7 +22,8 @@ clear: both;
 #bt_score {
   width: 25%;
   height: 100%;
-  margin: 0 auto;
+/*  margin: 0 auto;*/
+  margin-bottom: 1rem;
 }
 
 #score, .score {
@@ -32,6 +33,7 @@ clear: both;
 #score {
   color: green;
   font-size: 16pt;
+  margin-bottom: 1rem;
 }
 
 #app-heading {

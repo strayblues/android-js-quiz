@@ -22,11 +22,15 @@
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-  <div data-role="page" id="home" data-theme="b">
+  <div data-role="page" id="home" data-theme="a">
     <div data-role="header" id="wrapper">
+<!--
       <button id="bt_prev" data-icon="carat-l">BACK</button>
+-->
       <h1 id="app-heading">JS QUIZ</h1>
+<!--
       <button id="bt_next" data-icon="carat-r" data-iconpos="right">NEXT</button>
+-->
     </div>
 
     <div data-role="content" id="questions">
@@ -42,6 +46,13 @@
   	<button id="bt_score" onClick="calcScore()">SHOW SCORE</button>
     </div>
   	<div id="score"></div>
+
+    <div data-role="header" id="wrapper">
+      <button id="bt_prev" data-icon="carat-l">BACK</button>
+      <h1 id="app-heading"></h1>
+      <button id="bt_next" data-icon="carat-r" data-iconpos="right">NEXT</button>
+    </div>
+
 
   </div>
 </body>
