@@ -19,7 +19,7 @@ h1 {
  width: 20%;
 }
 
-#bt_score {
+#bt_score, #bt_again {
   width: 25%;
   height: 100%;
 /*  margin: 0 auto;*/
@@ -38,4 +38,9 @@ h1 {
 
 #app-heading {
   font-size: 200%;
+}
+
+.btn-low {
+  position: fixed;
+  margin-bottom: 0;
 }

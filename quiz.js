@@ -8,11 +8,11 @@ $.ajaxSetup({
     async: false
 });
 
-// Where we'll store the correct answers and the answers picked by the user
+// Here we'll store the correct answers and the answers picked by the user
 var correctAnswers = [];
 var userAnswers = new Array(10);
 
-// Calculate and show the score.
+// Calculate and show the score
 // The user gets a point for each "user answer" that matches a "correct answer"
 function calcScore(){
     for(var score=0, i=0; i<10; i++){
@@ -20,16 +20,18 @@ function calcScore(){
         score++;
         }
     }
-    // The Show Score button should disappear at this point
+    // Show the calculated score and new button-s
+    $("#score").html("YOUR SCORE: </br>"+score);
+    $("#bt_again").show();
+    // And remove several elements as the score is presented
     $("#bt_score").hide();
-    // The Back button should -maybe- disappear at this point
     $("#bt_prev").hide();
-    // Show the calculated score
-    $("#score").text("YOUR SCORE: "+score);
+    $("#questions").hide();
 }
 
+// BIG FAT FUNCTION
 $(function(){
-
+// General shuffle function
 function shuffle(array) {
     var currentIndex = array.length, temporaryValue, randomIndex;
 
@@ -91,10 +93,11 @@ function showQuestion(){
 var clickCount = 0;
 showQuestion();
 $("#bt_next").show();
-// When the 1st question is displayed, the Back button is hidden
+// When the 1st question is displayed, these buttons are hidden
 $("#bt_prev").hide();
-// The Score button is hidden as well
 $("#bt_score").hide();
+$("#bt_again").hide();
+
 
 // Handle cases where the user goes back/forward
 $("#bt_next").click(function(){
@@ -106,6 +109,8 @@ $("#bt_next").click(function(){
     $("#bt_prev").show();
     $("#bt_next").show();
     $("#bt_score").hide();
+    $("#bt_again").hide();
+
     // When the user gets to the last (10th) question, the next button disappears
     // and the Show Score button is displayed
     if (clickCount === 9) {
@@ -123,6 +128,7 @@ $("#bt_prev").click(function(){
     $("#bt_prev").show();
     $("#bt_next").show();
     $("#bt_score").hide();
+    $("#bt_again").hide();
 
     // When user returns to 1st question, hide the Back button
     if (clickCount === 0) {
@@ -149,4 +155,4 @@ $('#answer4button').click(function() {
     userAnswers[clickCount] = ($('#answer4').text());
 });
 
-});
+}); // End of big function

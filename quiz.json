@@ -1,56 +1,56 @@
 [
 
-  {"question": "Why do JavaScript and Java have similar name?",
-    "correct answer": "JavaScript's syntax is loosely based on Java's",
-    "wrong answers": ["JavaScript is a stripped-down version of Java","They both originated on the island of Java","None of the above"]},
+  {"question": "Inside which HTML element do we put the JavaScript?",
+    "correct answer": "<script>",
+    "wrong answers": ["<scripting>","<js>","<javascript>"]},
 
   {"question": "When a user views a page containing a JavaScript program, which machine actually executes the script?",
     "correct answer": "The User's machine running a Web browser",
     "wrong answers": ["The Web server","A central machine deep within Netscape's corporate offices","None of the above"]},
 
-  {"question": "______ JavaScript is also called client-side JavaScript.",
-    "correct answer": "Navigator",
-    "wrong answers": ["Microsoft","LiveWire","Native"]},
+  {"question": "What is the correct syntax for referring to an external script called \"xxx.js\"?",
+    "correct answer": "<script src=\"xxx.js\">",
+    "wrong answers": ["<script name=\"xxx.js\">","<script href=\"xxx.js\">","<script type=\"xxx.js\">"]},
 
-  {"question": "__________ JavaScript is also called server-side JavaScript.",
-    "correct answer": "LiveWire",
-    "wrong answers": ["Microsoft","Navigator","Native"]},
+  {"question": "The external JavaScript file must contain the <script> tag.",
+    "correct answer": "Never",
+    "wrong answers": ["Sometimes","Always","It must contain the <js> tag"]},
 
-  {"question": "What are variables used for in JavaScript Programs?",
-    "correct answer": "Storing numbers, dates, or other values",
-    "wrong answers": ["Varying randomly","Causing high-school algebra flashbacks","None of the above"]},
+  {"question": "How do you write \"Hello World\" in an alert box?",
+    "correct answer": "alert(\"Hello World\");",
+    "wrong answers": ["alertBox(\"Hello World\");","msg(\"Hello World\");","msgBox(\"Hello World\");"]},
 
-  {"question": "_____ JavaScript statements embedded in an HTML page can respond to user events such as mouse-clicks, form input, and page navigation.",
-    "correct answer": "Client-side",
-    "wrong answers": ["Server-side","Local","Native"]},
+  {"question": "How do you create a function in JavaScript?",
+    "correct answer": "function myFunction()",
+    "wrong answers": ["function = myFunction()","function:myFunction()","new function = myFunction()"]},
 
   {"question": "What should appear at the very end of your JavaScript?",
-    "correct answer": "The </script>",
-    "wrong answers": ["The <script>","The END statement","None of the above"]},
+    "correct answer": "The </script> tag",
+    "wrong answers": ["The <script> tag","The END statement","The </js> tag"]},
 
-  {"question": "Which of the following can't be done with client-side JavaScript?",
-    "correct answer": "Storing the form's contents to a database file on the server",
-    "wrong answers": ["Validating a form","Sending a form's contents by email","None of the above"]},
+  {"question": "How to write an IF statement in JavaScript?",
+    "correct answer": "if (i == 5)",
+    "wrong answers": ["if i == 5 then","if i = 5","if i = 5 then"]},
 
-  {"question": "Which of the following are capabilities of functions in JavaScript?",
-    "correct answer": "Accept parameters",
-    "wrong answers": ["Return a value","Accept parameters and Return a value","None of the above"]},
+  {"question": "How to write an IF statement for executing some code if \"i\" is NOT equal to 5?",
+    "correct answer": "if (i != 5)",
+    "wrong answers": ["if i <> 5","if (i <> 5)","if i =! 5 then"]},
 
   {"question": "Which of the following is not a valid JavaScript variable name?",
     "correct answer": "2names",
-    "wrong answers": [" _first_and_last_names","FirstAndLast","None of the above"]},
+    "wrong answers": ["_first_and_last_names","FirstAndLast","twoNames"]},
 
-  {"question": "______ tag is an extension to HTML that can enclose any number of JavaScript statements.",
-    "correct answer": "<SCRIPT>",
-    "wrong answers": ["<BODY>","<HEAD>","<TITLE>"]},
+  {"question": "How does a WHILE loop start?",
+    "correct answer": "while (i <= 10)",
+    "wrong answers": ["while (i = 0; i <= 10; i++)","while i = 1 to 10","while (i <= 10; i++)"]},
 
-  {"question": "How does JavaScript store dates in a date object?",
-    "correct answer": "The number of milliseconds since January 1st, 1970",
-    "wrong answers": ["The number of days since January 1st, 1900","The number of seconds since Netscape's public stock offering.","None of the above"]},
+  {"question": "How does a FOR loop start?",
+    "correct answer": "for (i = 0; i <= 5; i++)",
+    "wrong answers": ["for (i <= 5; i++)","for (i = 0; i <= 5)","for i = 1 to 5"]},
 
-  {"question": "Which of the following attribute can hold the JavaScript version?",
-    "correct answer": "LANGUAGE",
-    "wrong answers": ["SCRIPT","VERSION","None of the above"]},
+  {"question": "How can you add a comment in JavaScript?",
+    "correct answer": "//This is a comment",
+    "wrong answers": ["<!--This is a comment-->","*This is a comment*","/This is a comment/"]},
 
   {"question": "What is the correct JavaScript syntax to write \"Hello World\"?",
     "correct answer": "document.write(\"Hello World\")",
@@ -58,21 +58,21 @@
                       "println (\"Hello World\")",
                       "response.write(\"Hello World\")"]},
 
-  {"question": "Which of the following way can be used to indicate the LANGUAGE attribute?",
-    "correct answer": "<SCRIPT LANGUAGE=\"JavaScriptVersion\">    JavaScript statements…</SCRIPT>",
-    "wrong answers": ["<LANGUAGE=\"JavaScriptVersion\">","<SCRIPT LANGUAGE=\"JavaScriptVersion\">","<SCRIPT LANGUAGE=\"JavaScriptVersion\"!>    JavaScript statements…</SCRIPT>"]},
+  {"question": "What is the correct way to write a JavaScript array?",
+    "correct answer": "var colors = [\"red\", \"green\", \"blue\"]",
+    "wrong answers": ["var colors = \"red\", \"green\", \"blue\"","var colors = 1 = (\"red\"), 2 = (\"green\"), 3 = (\"blue\")","var colors = (1:\"red\", 2:\"green\", 3:\"blue\")"]},
 
   {"question": "What is the correct syntax for referring to an external script called \" abc.js\"?",
     "correct answer": "<script src=\" abc.js\">",
     "wrong answers": ["<script href=\" abc.js\">","<script name=\" abc.js\">","None of the above"]},
 
-  {"question": "Which types of image maps can be used with JavaScript?",
-    "correct answer": "Client-side image maps",
-    "wrong answers": ["Server-side image maps","Server-side image maps and Client-side image maps","None of the above"]},
+  {"question": "How do you round the number 7.25, to the nearest integer?",
+    "correct answer": "Math.round(7.25)",
+    "wrong answers": ["rnd(7.25)","Math.rnd(7.25)","round(7.25)"]},
 
-  {"question": "Which of the following navigator object properties is the same in both   Netscape and IE?",
-    "correct answer": "navigator.appCodeName",
-    "wrong answers": ["navigator.appName","navigator.appVersion","None of the above"]},
+  {"question": "How do you find the number with the highest value of x and y?",
+    "correct answer": "Math.max(x, y)",
+    "wrong answers": ["top(x, y)","ceil(x, y)","Math.ceil(x, y)"]},
 
   {"question": "What does the <noscript> tag do?",
     "correct answer": "Enclose text to be displayed by non-JavaScript browsers.",
@@ -82,21 +82,21 @@
     "correct answer": "Ampersand, semicolon",
     "wrong answers": ["Semicolon, colon","Semicolon, Ampersand","Ampersand, colon"]},
 
-  {"question": "Which of the following best describes JavaScript?",
-    "correct answer": "blue",
-    "wrong answers": ["cute","door","cup"]},
+  {"question": "JavaScript is the same as Java.",
+    "correct answer": "False",
+    "wrong answers": ["True"]},
 
-  {"question": "what is your favorite colour?",
-    "correct answer": "an object-oriented scripting language.",
-    "wrong answers": ["a low-level programming language.","a scripting language precompiled in the browser.","a compiled scripting language."]},
+  {"question": "Which event occurs when the user clicks on an HTML element?",
+    "correct answer": "onclick",
+    "wrong answers": ["onchange","onmouseover","onmouseclick"]},
 
-  {"question": "Choose the server-side JavaScript object?",
-    "correct answer": "File",
-    "wrong answers": ["FileUpLoad","Function","Date"]},
+  {"question": "How do you declare a JavaScript variable?",
+    "correct answer": "var carName;",
+    "wrong answers": ["v carName;","variable carName;","variable = carName;"]},
 
-  {"question": "Choose the client-side JavaScript object?",
-    "correct answer": "FileUpLoad",
-    "wrong answers": ["Database","Cursor","Client"]},
+  {"question": "Which operator is used to assign a value to a variable?",
+    "correct answer": "=",
+    "wrong answers": ["*","x","-"]},
 
   {"question": "Which of the following is not considered a JavaScript operator?",
     "correct answer": "this",
@@ -110,9 +110,9 @@
     "correct answer": "onblur",
     "wrong answers": ["onfocus","onclick","ondblclick"]},
 
-  {"question": "JavaScript is interpreted by _________",
+  {"question": "JavaScript is interpreted by --",
     "correct answer": "Client",
-    "wrong answers": ["Server","Object","None of the above"]},
+    "wrong answers": ["Server","Object","File"]},
 
   {"question": "Using _______ statement is how you test for a specific condition.",
     "correct answer": "If",
@@ -122,8 +122,8 @@
     "correct answer": "Splice",
     "wrong answers": ["Reverse","Shift","Slice"]},
 
-  {"question": "To set up the window to capture all Click events, we use which of the following statement?",
-    "correct answer": "window.captureEvents(Event.CLICK);",
-    "wrong answers": ["window.handleEvents (Event.CLICK);","window.routeEvents(Event.CLICK );","window.raiseEvents(Event.CLICK );"]}
+  {"question": "What will the following code return: Boolean(10 > 9)",
+    "correct answer": "true",
+    "wrong answers": ["false","NaN","undefined"]}
 
   ]
