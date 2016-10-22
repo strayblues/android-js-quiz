@@ -20,13 +20,14 @@ function calcScore(){
         score++;
         }
     }
-    // Show the calculated score and new button-s
-    $("#score").html("YOUR SCORE: </br>"+score);
-    $("#bt_again").show();
-    // And remove several elements as the score is presented
+    // Remove elements as the score is presented
     $("#bt_score").hide();
     $("#bt_prev").hide();
     $("#questions").hide();
+
+    // Show the calculated score and new button-s
+    $("#score").html("</br>Your result is</br>"+score+" of 10</br></br>");
+    $("#bt_again").show();
 }
 
 // BIG FAT FUNCTION

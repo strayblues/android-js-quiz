@@ -19,6 +19,7 @@
 
   <!--internal links-->
   <script src="quiz.js"></script>
+<!--  <script src="reloadpage.js"></script>-->
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
@@ -43,9 +44,10 @@
   	</ul>
   	</div>
     <div class="score">
-    	<button id="bt_score" onClick="calcScore()">SHOW SCORE</button>
+    	<button class="btn-center" id="bt_score" onClick="calcScore()">Show score</button>
       <div id="score"></div>
-      <button class="btn-low" id="bt_again" onClick="calcScore()">Try again</button>
+      <button class="btn-bottom btn-center" id="bt_again" type="button"
+              value="Refresh Page" onClick="window.location.reload()">Try again</button>
     </div>
 
     <div data-role="header" id="wrapper">
