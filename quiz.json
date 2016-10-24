@@ -82,10 +82,6 @@
     "correct answer": "Ampersand, semicolon",
     "wrong answers": ["Semicolon, colon","Semicolon, Ampersand","Ampersand, colon"]},
 
-  {"question": "JavaScript is the same as Java.",
-    "correct answer": "False",
-    "wrong answers": ["True"]},
-
   {"question": "Which event occurs when the user clicks on an HTML element?",
     "correct answer": "onclick",
     "wrong answers": ["onchange","onmouseover","onmouseclick"]},
@@ -105,10 +101,6 @@
   {"question": "______method evaluates a string of JavaScript code in the context of the specified object.",
     "correct answer": "Eval",
     "wrong answers": ["ParseInt","ParseFloat","Efloat"]},
-
-  {"question": "Which of the following event fires when the form element loses the focus: <button>, <input>, <label>, <select>, <textarea>?",
-    "correct answer": "onblur",
-    "wrong answers": ["onfocus","onclick","ondblclick"]},
 
   {"question": "JavaScript is interpreted by --",
     "correct answer": "Client",

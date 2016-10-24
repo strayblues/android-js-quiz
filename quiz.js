@@ -26,7 +26,7 @@ function calcScore(){
     $("#questions").hide();
 
     // Show the calculated score and new button-s
-    $("#score").html("</br>Your result is</br>"+score+" of 10</br></br>");
+    $("#score").html("</br>Your result is</br></br>"+score+" of 10</br></br>");
     $("#bt_again").show();
 }
 
@@ -66,12 +66,14 @@ function showQuestion(){
     $("#answer2button").prop("checked", false);
     $("#answer3button").prop("checked", false);
     $("#answer4button").prop("checked", false);
+    $("input[type='radio']").checkboxradio("refresh");
 
     // What is this variable?
     var q = questionList[clickCount];
+    // display a question
     $('#question').text(q['question']);
 
-    // What's happening?
+    // The answers that will be presented
     var answerz = [
         q['correct answer'],
         q['wrong answers'][0],
@@ -79,11 +81,10 @@ function showQuestion(){
         q['wrong answers'][2]
     ];
 
-        // Shuffle the answers
+        // Shuffle the 4 answers to a question
         shuffle(answerz);
 
-        // Set the questions' order by inserting the shuffled answers into each
-        // of the 4 places
+        // display 4 answers
         $('#answer1').text(answerz[0]);
         $('#answer2').text(answerz[1]);
         $('#answer3').text(answerz[2]);
@@ -139,7 +140,7 @@ $("#bt_prev").click(function(){
 );
 
 var currentQuestion = 0;
-// What's going on here?
+// Record user's answer
 $('#answer1button').click(function() {
     userAnswers[clickCount] = ($('#answer1').text());
 });
