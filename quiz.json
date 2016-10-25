@@ -4,9 +4,9 @@
     "correct answer": "<script>",
     "wrong answers": ["<scripting>","<js>","<javascript>"]},
 
-  {"question": "When a user views a page containing a JavaScript program, which machine actually executes the script?",
-    "correct answer": "The User's machine running a Web browser",
-    "wrong answers": ["The Web server","A central machine deep within Netscape's corporate offices","None of the above"]},
+  {"question": "What will the following code return: a="12"; document.write('</br>'+(typeof a));",
+    "correct answer": "string",
+    "wrong answers": ["object","number","int"]},
 
   {"question": "What is the correct syntax for referring to an external script called \"xxx.js\"?",
     "correct answer": "<script src=\"xxx.js\">",
@@ -64,7 +64,7 @@
 
   {"question": "What is the correct syntax for referring to an external script called \" abc.js\"?",
     "correct answer": "<script src=\" abc.js\">",
-    "wrong answers": ["<script href=\" abc.js\">","<script name=\" abc.js\">","None of the above"]},
+    "wrong answers": ["<script href=\" abc.js\">","<script name=\" abc.js\">","<script type=\" abc.javascript\">"]},
 
   {"question": "How do you round the number 7.25, to the nearest integer?",
     "correct answer": "Math.round(7.25)",
@@ -74,13 +74,13 @@
     "correct answer": "Math.max(x, y)",
     "wrong answers": ["top(x, y)","ceil(x, y)","Math.ceil(x, y)"]},
 
-  {"question": "What does the <noscript> tag do?",
-    "correct answer": "Enclose text to be displayed by non-JavaScript browsers.",
-    "wrong answers": ["Prevents scripts on the page from executing.","Describes certain low-budget movies.","None of the above"]},
+  {"question": "var temp = null; What is the type of temp?",
+    "correct answer": "object",
+    "wrong answers": ["undefined","NaN","null"]},
 
-  {"question": "JavaScript entities start with _______ and end with _________.",
+  {"question": "JavaScript entities start with _____ and end with _____.",
     "correct answer": "Ampersand, semicolon",
-    "wrong answers": ["Semicolon, colon","Semicolon, Ampersand","Ampersand, colon"]},
+    "wrong answers": ["Semicolon, colon","Semicolon, Ampersand","Ampersand, question mark"]},
 
   {"question": "Which event occurs when the user clicks on an HTML element?",
     "correct answer": "onclick",
@@ -98,19 +98,15 @@
     "correct answer": "this",
     "wrong answers": ["new","delete","typeof"]},
 
-  {"question": "______method evaluates a string of JavaScript code in the context of the specified object.",
-    "correct answer": "Eval",
-    "wrong answers": ["ParseInt","ParseFloat","Efloat"]},
-
   {"question": "JavaScript is interpreted by --",
     "correct answer": "Client",
     "wrong answers": ["Server","Object","File"]},
 
-  {"question": "Using _______ statement is how you test for a specific condition.",
+  {"question": "Which statement is used for testing for a specific condition?",
     "correct answer": "If",
     "wrong answers": ["Select","Switch","For"]},
 
-  {"question": "The _______ method of an Array object adds and/or removes elements from an array.",
+  {"question": "Which method can add and/or remove elements from an array?",
     "correct answer": "Splice",
     "wrong answers": ["Reverse","Shift","Slice"]},
 
