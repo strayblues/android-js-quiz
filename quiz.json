@@ -4,7 +4,7 @@
     "correct answer": "<script>",
     "wrong answers": ["<scripting>","<js>","<javascript>"]},
 
-  {"question": "What will the following code return: a="12"; document.write('</br>'+(typeof a));",
+  {"question": "a = \"12\"; What is the typeof a?",
     "correct answer": "string",
     "wrong answers": ["object","number","int"]},
 
@@ -78,7 +78,7 @@
     "correct answer": "object",
     "wrong answers": ["undefined","NaN","null"]},
 
-  {"question": "JavaScript entities start with _____ and end with _____.",
+  {"question": "JavaScript entities start with ____ and end with ____.",
     "correct answer": "Ampersand, semicolon",
     "wrong answers": ["Semicolon, colon","Semicolon, Ampersand","Ampersand, question mark"]},
 
