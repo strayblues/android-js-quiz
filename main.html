@@ -21,7 +21,7 @@
 </head>
 <body>
   <div data-role="page" id="home" data-theme="c">
-    <div data-role="header" id="wrapper">
+    <div data-role="header">
       <h1 id="app-heading">JS QUIZ</h1>
     </div>
     <div data-role="content" id="questions">
@@ -34,16 +34,16 @@
   	</ul>
   	</div>
     <div class="score">
-    	<button class="btn-center" id="bt_score" onClick="calcScore()">Show score</button>
+    	<button class="btn-center" id="bt_score" data-theme="b" onClick="calcScore()">Show score</button>
       <div id="score"></div>
-      <button class="btn-bottom btn-center" id="bt_again" type="button"
+      <button class="btn-bottom btn-center" id="bt_again" type="button" data-theme="b"
               value="Refresh Page" onClick="window.location.reload()">Try again</button>
     </div>
 
-    <div data-role="header" id="wrapper" data-pos="bottom">
+    <div data-role="header" data-pos="bottom">
       <button id="bt_prev" data-icon="carat-l">Previous</button>
       <h1 id="app-heading"></h1>
-      <button id="bt_next" data-icon="carat-r" data-iconpos="right">Next</button>
+      <button id="bt_next" data-icon="carat-r" data-iconpos="right" data-theme="b">Next</button>
     </div>
   </div>
 </body>

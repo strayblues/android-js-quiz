@@ -8,8 +8,9 @@ $.ajaxSetup({
     async: false
 });
 
-// Here we'll store the correct answers and the answers picked by the user
+// store the correct answers in an array
 var correctAnswers = [];
+// Store answers picked by the user in an array
 var userAnswers = new Array(10);
 
 // BIG FUNCTION
@@ -48,40 +49,39 @@ var fullQuestionList, questionList;
 
   function showQuestion(){
 
-      // Make sure all answers are unchecked when a new question is displayed
-      $("#answer1button").prop("checked", false);
-      $("#answer2button").prop("checked", false);
-      $("#answer3button").prop("checked", false);
-      $("#answer4button").prop("checked", false);
-      $("input[type='radio']").checkboxradio("refresh");
+    // Make sure all answers are unchecked when a new question is displayed
+    $("#answer1button").prop("checked", false);
+    $("#answer2button").prop("checked", false);
+    $("#answer3button").prop("checked", false);
+    $("#answer4button").prop("checked", false);
+    $("input[type='radio']").checkboxradio("refresh");
 
-      //questionList now contains 10 questions, the current one goes into q
-      var q = questionList[clickCount];
-      // Display question
-      $('#question').text(q['question']);
+    //questionList now contains 10 questions, the current one goes into q
+    var q = questionList[clickCount];
 
-      // Get answers
-      var answersToShow = [
-          q['correct answer'],
-          q['wrong answers'][0],
-          q['wrong answers'][1],
-          q['wrong answers'][2]
-      ];
+    // Display question...
+    $('#question').text(q['question']);
 
-          // Shuffle answers
-          shuffle(answersToShow);
+    // Get its answers...
+    var answersToShow = [
+        q['correct answer'],
+        q['wrong answers'][0],
+        q['wrong answers'][1],
+        q['wrong answers'][2]
+    ];
 
-          // Display answers
-          $('#answer1').text(answersToShow[0]);
-          $('#answer2').text(answersToShow[1]);
-          $('#answer3').text(answersToShow[2]);
-          $('#answer4').text(answersToShow[3]);
+        // Shuffle answers and display them
+        shuffle(answersToShow);
+        $('#answer1').text(answersToShow[0]);
+        $('#answer2').text(answersToShow[1]);
+        $('#answer3').text(answersToShow[2]);
+        $('#answer4').text(answersToShow[3]);
   }
 
 // Counter initialized
 var clickCount = 0;
 
-// Start a session by showing a question
+// Start a session by displaying a question
 showQuestion();
 $("#bt_next").show(); // Only Next is visible when session starts
 $("#bt_prev").hide(); // The other buttons are hidden
@@ -109,9 +109,9 @@ $("#bt_again").hide();
       }
   });
 
-  // When user goes back
+  // When user goes back...
   $("#bt_prev").click(function(){
-      // Counter tacks backwards steps
+      // Counter tacks the steps back
       clickCount-=1;
       showQuestion();
       $("#bt_prev").show();
@@ -125,20 +125,16 @@ $("#bt_again").hide();
       }
   });
 
-  var currentQuestion = 0;
-  // Record the user's answer for all 4 possible cases
+  // Record the user's answer for all 4 possible choices
   $('#answer1button').click(function() {
       userAnswers[clickCount] = ($('#answer1').text());
   });
-
   $('#answer2button').click(function() {
       userAnswers[clickCount] = ($('#answer2').text());
   });
-
   $('#answer3button').click(function() {
       userAnswers[clickCount] = ($('#answer3').text());
   });
-
   $('#answer4button').click(function() {
       userAnswers[clickCount] = ($('#answer4').text());
   });
