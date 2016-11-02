@@ -1,0 +1,57 @@
+#home {
+  height: 100% !important;
+  position:relative !important;
+}
+
+#footer {
+  bottom: 0;
+  position: absolute !important;
+/*  top: auto !important;*/
+  height: 10%;
+  width: 100%;
+}
+
+#question, #score, #bt_next, #bt_prev, #bt_score, #bt_again {
+  font-family: 'Montserrat', sans-serif;
+  color: black;
+}
+
+#question {
+  font-size: 16pt;
+}
+
+h1 {
+  font-size: 100% !important;
+}
+
+#bt_next, #bt_prev, #bt_score, #bt_again {
+  height: 90% !important;
+  width: 35%;
+}
+
+#bt_score {
+  float: right;
+}
+
+#score, .score {
+  text-align: center;
+}
+
+#score {
+  color: green;
+  font-size: 20pt;
+}
+
+#app-heading {
+  font-size: 200%;
+}
+
+.btn-bottom {
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.btn-center {
+  margin: 0 auto;
+}
+

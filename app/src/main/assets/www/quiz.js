@@ -8,7 +8,7 @@ $.ajaxSetup({
     async: false
 });
 
-// store the correct answers in an array
+// Store the correct answers in an array
 var correctAnswers = [];
 // Store answers picked by the user in an array
 var userAnswers = new Array(10);
@@ -93,7 +93,7 @@ $("#bt_again").hide();
       // Counter tacks the user's forward steps
       clickCount+=1;
       showQuestion();
-      // When counter>0 we've past the fisrt question,
+      // When counter>0 we're past the fisrt question,
       // so Previous should be displayed
       $("#bt_prev").show();
       $("#bt_next").show();
@@ -104,8 +104,8 @@ $("#bt_again").hide();
       // When the user gets to the last (10th) question, the next button disappears
       // and the Show Score button is displayed
       if (clickCount === 9) {
-      $("#bt_score").show();
-      $("#bt_next").hide();
+          $("#bt_score").show();
+          $("#bt_next").hide();
       }
   });
 
@@ -151,11 +151,12 @@ function calcScore(){
     }
 
     // Show calculated score and Try Again button
-    $("#score").html("</br>Your result is</br></br>"+score+" of 10</br></br>");
+    $("#score").html("</br>Your result is</br>"+score+" of 10</br></br>");
     $("#bt_again").show();
 
     // Hide these elements when score is presented
     $("#bt_score").hide();
     $("#bt_prev").hide();
     $("#questions").hide();
+    $("#footer").hide();
 }

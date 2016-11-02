@@ -1,2 +1,2 @@
-# android-js-quiz
+# js-quiz
 JavaScript knowledge quiz
