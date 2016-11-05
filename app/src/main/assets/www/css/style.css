@@ -17,7 +17,7 @@
 }
 
 #question {
-  font-size: 16pt;
+  font-size: 15pt;
 }
 
 h1 {
@@ -28,10 +28,10 @@ h1 {
   height: 90% !important;
   width: 35%;
 }
-
+/*
 #bt_score {
-  float: right;
-}
+  float: center;
+}*/
 
 #score, .score {
   text-align: center;

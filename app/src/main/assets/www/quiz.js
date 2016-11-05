@@ -70,12 +70,28 @@ var fullQuestionList, questionList;
         q['wrong answers'][2]
     ];
 
-        // Shuffle answers and display them
-        shuffle(answersToShow);
-        $('#answer1').text(answersToShow[0]);
-        $('#answer2').text(answersToShow[1]);
-        $('#answer3').text(answersToShow[2]);
-        $('#answer4').text(answersToShow[3]);
+    // Shuffle answers and display them
+    shuffle(answersToShow);
+    $('#answer1').text(answersToShow[0]);
+    $('#answer2').text(answersToShow[1]);
+    $('#answer3').text(answersToShow[2]);
+    $('#answer4').text(answersToShow[3]);
+
+    // Mark previously chosen answer
+    if (userAnswers[clickCount] === answersToShow[0]) {
+        $("#answer1button").prop("checked", true);
+    }
+    if (userAnswers[clickCount] === answersToShow[1]) {
+        $("#answer2button").prop("checked", true);
+    }
+    if (userAnswers[clickCount] === answersToShow[2]) {
+        $("#answer3button").prop("checked", true);
+    }
+    if (userAnswers[clickCount] === answersToShow[3]) {
+        $("#answer4button").prop("checked", true);
+    }
+    $("input[type='radio']").checkboxradio("refresh");
+
   }
 
 // Counter initialized
